@@ -15,6 +15,7 @@ ANuvemCPlus::ANuvemCPlus()
 void ANuvemCPlus::BeginPlay()
 {
 	Super::BeginPlay();
+	velocidade.X = FMath::RandRange(veloMin, veloMax);
 	
 }
 

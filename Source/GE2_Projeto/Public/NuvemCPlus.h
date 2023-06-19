@@ -22,9 +22,13 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
-	UPROPERTY(EditAnywhere)
-	FVector velocidade;
 	
+	UPROPERTY(EditAnywhere, Category = "Velocidade")
+		float veloMin;
+	UPROPERTY(EditAnywhere, Category = "Velocidade")
+		float veloMax;
+	UPROPERTY(EditAnywhere, Category="Velocidade")
+	FVector velocidade;
+
 
 };
